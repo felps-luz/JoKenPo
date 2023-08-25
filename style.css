@@ -1,0 +1,91 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    /*fim reset*/
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado
+{
+opacity: 1;
+transition: 0.6s;
+}
+ul#jogadorEscolha li a:not(:hover)
+{
+    transition: 0.6s;
+    }
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+opacity: 0.5;
+}
+
+#placar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul#jogadorEscolha{
+    display: flex ;
+    justify-content: center;
+}
+ul#computadorEscolha{
+    display: flex;
+    justify-content: center;
+}
+#placar img{
+    width: 160px;
+}
+#principal{
+    text-align: center;
+    background-image: url(Ibagem/FundoMine.png);
+    height: 900px;
+    
+}
+#jogador{
+    background-color: rgb(132, 19, 19);
+    width: 600px;
+    height: 250px;
+    border-radius: 3%;
+    border: 10px solid rgb(79, 21, 21);
+}
+#jogador, #computador{
+    font: 500 20px 'lucida',sans-serif ;
+    margin-top: 90px;
+}
+#computador{
+    background-color: rgb(132, 19, 19);
+    width: 600px;
+    height: 250px;
+    border-radius: 3%;
+    border: 10px solid rgb(79, 21, 21);
+}
+#mensagem{
+    font: 700 30px 'lucida',sans-serif ;
+    background-color:rgba(146, 43, 43, 0.832);
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid rgb(79, 21, 21);
+    margin-left: 720px;
+    margin-top: 40px;
+}
+#versus{
+    font: 700 50px 'lucida',sans-serif ;
+    color: rgb(66, 22, 0) ;
+}
+#titulo{
+    font: 700 40px 'lucida',sans-serif ;
+}
+ul{
+    list-style: none;
+}
